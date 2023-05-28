@@ -4,25 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>viewport</title>
+    <title>Media Query</title>
     <link rel="stylesheet" href="./style.css">
     <style>
-        h1 {
-            font-size: 48pt;
+      li {
+        width: 100%;
+        list-style-type: none;
+        
+      }
+
+      li img{
+        width: 100%;
+      }
+
+      @media screen and (min-width: 1366px) {
+        li {
+            max-width: 33%;
+             float: left;          
         }
+      }
+
+      @media screen and (orientation: portrait) and (max-width:640px) {
+        body {
+            background-color: red ;
+        }
+      }
     </style>
 </head>
 <body>
-    <h1>Titulo</h1>
-    <h2>Subtitulo 1</h2>
-    <section>
-        <h2>Subtitulo 2</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, natus doloremque eveniet libero ullam iusto et. Natus ad debitis ea, consequatur itaque repudiandae voluptas facere dolor explicabo corporis, ullam maiores!
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, natus doloremque eveniet libero ullam iusto et. Natus ad debitis ea, consequatur itaque repudiandae voluptas facere dolor explicabo corporis, ullam maiores!
-        </p>
-    </section>
+    <ul>
+        <li>
+            <img src="https://m.media-amazon.com/images/I/51tk1Ht7N5L._AC_SY625_.jpg" alt="">
+            <h3>Tennis All Star</h3>
+        </li>
+        <li>
+            <img src="https://m.media-amazon.com/images/I/51tk1Ht7N5L._AC_SY625_.jpg" alt="">
+            <h3>Tennis All Star</h3>
+        </li>
+        <li>
+            <img src="https://m.media-amazon.com/images/I/51tk1Ht7N5L._AC_SY625_.jpg" alt="">
+            <h3>Tennis All Star</h3>
+        </li>
+    </ul>
+          
 </body>
 </html>
